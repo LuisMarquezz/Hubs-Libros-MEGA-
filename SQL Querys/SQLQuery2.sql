@@ -1,0 +1,46 @@
+Use hubLibros;
+
+CREATE TABLE Usuarios (
+    ID_Usuario INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(255) NOT NULL,
+    Apellido NVARCHAR(255) NOT NULL,
+    Email NVARCHAR(255) NOT NULL UNIQUE,
+    Password NVARCHAR(255) NOT NULL,
+    NombreDeUsuario NVARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE librosLeidos (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    ID_Usuario INT NOT NULL,
+    ID_Libro INT NOT NULL,
+    ID_API NVARCHAR(255) NOT NULL,
+    FOREIGN KEY (ID_Usuario) REFERENCES Usuarios(ID_Usuario)
+);
+
+
+CREATE TABLE librosPorLeer (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    ID_Usuario INT NOT NULL,
+    ID_Libro INT NOT NULL,
+    ID_API NVARCHAR(255) NOT NULL,
+    FOREIGN KEY (ID_Usuario) REFERENCES Usuarios(ID_Usuario)
+);
+
+
+CREATE TABLE librosNoGustar (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    ID_Usuario INT NOT NULL,
+    ID_Libro INT NOT NULL,
+    ID_API NVARCHAR(255) NOT NULL,
+    FOREIGN KEY (ID_Usuario) REFERENCES Usuarios(ID_Usuario)
+);
+
+
+CREATE TABLE librosFavoritos (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    ID_Usuario INT NOT NULL,
+    ID_Libro INT NOT NULL,
+    ID_API NVARCHAR(255) NOT NULL,
+    FOREIGN KEY (ID_Usuario) REFERENCES Usuarios(ID_Usuario)
+);
+
