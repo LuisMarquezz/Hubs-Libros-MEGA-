@@ -10,11 +10,15 @@ El proyecto es una aplicacion para gestionar los libros favoritos, libros que no
 3.- Proporcionar una interfaz intuitiva, con la creacion de menus y con la informacion organizada es de facil interazción con un catalogo de libros donde tambien el usuario puede buscar a traves de la barra de busqueda por si le interesa algo muy especifico
 ## Funcionamiento
  El programa comienza con un login siendo necesario que el usuario cree una cuenta.
+ 
  ![image](https://github.com/LuisMarquezz/Hubs-Libros-MEGA-/blob/master/Hub%20Libros%20Imagenes/Imagen_Login.jpg?raw=true)
+ 
  ![image](https://github.com/LuisMarquezz/Hubs-Libros-MEGA-/blob/master/Hub%20Libros%20Imagenes/Imagen_register.jpg?raw=true)
 
  Despues de eso y de logearse aparecera en el menu principal donde podra intactuar con la aplicacion.
+ 
 ![image](https://github.com/LuisMarquezz/Hubs-Libros-MEGA-/blob/master/Hub%20Libros%20Imagenes/Imagen_Home.jpg?raw=true)
+
 ![image](https://github.com/LuisMarquezz/Hubs-Libros-MEGA-/blob/master/Hub%20Libros%20Imagenes/Imagen_Libro.jpg?raw=true)
 ## Instrucciones de uso
 1.- Debes descargar los forms y despues abrirlos en el proyecto es necesario cambiar las contraseña de las BD para que funcione
